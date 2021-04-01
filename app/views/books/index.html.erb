@@ -9,6 +9,13 @@
   <% end %>
 </div>
 
-<%= link_to '書籍を登録する', new_book_path %>
+<%= link_to '書籍を登録する', new_book_path %></br>
+
+<% @books.each do |book| %>
+  <%= image_tag(book.image_url) %></br>
+  <%= book.title %></br>
+  <%= book.author %></br>
+  <%= book.caption %></br>
+<% end %>
 
 
