@@ -17,6 +17,7 @@
     <%= book.title %></br>
     <%= book.author %></br>
     <%= book.caption %></br>
+    <%= link_to '登録解除', book_path(book), method: :delete %></br>
   <% end %>
 <% end %>
 
