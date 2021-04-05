@@ -13,7 +13,7 @@
   <%= link_to '書籍を追加する', new_book_path %></br>
 
   <% @books.each do |book| %>
-    <%= image_tag(book.image_url) %></br>
+    <%= link_to (image_tag(book.image_url)), book_reviews_path(book) %></br>
     <%= book.title %></br>
     <%= book.author %></br>
     <%= book.caption %></br>

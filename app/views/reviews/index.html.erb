@@ -1,0 +1,17 @@
+<h1>個別書籍ページ</h1>
+<% if @review.present? %>
+  <%= link_to '編集する', "/books/#{@book.id}/reviews/{@review}/edit" %>
+<% else %>
+  <%= link_to 'レビューを登録', new_book_review_path %></br>
+<% end %>
+</br>
+
+<%= image_tag(@book.image_url) %></br>
+<%= @book.title %></br>
+<%= @book.author %></br>
+
+<% if @review.present? %>
+  <%= @review.summary %></br>
+  <%= @review.impressions %></br>
+  <%= @review.plan %></br>
+<% end %>
