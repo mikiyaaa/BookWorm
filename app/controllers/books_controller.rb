@@ -1,6 +1,8 @@
 class BooksController < ApplicationController
+  before_action :authenticate_user!
+  
   def index
-    @books = Book.includes(:user)
+    @books = Book.where(user_id: current_user.id)
   end
 
   def new
@@ -23,10 +25,14 @@ class BooksController < ApplicationController
     unless @book.persisted?
       result = RakutenWebService::Books::Book.search(isbn: @book.isbn)
       @book = Book.new(read(result.first))
-      if @book.save
-        redirect_to root_path
+      if current_user.id == @book.user_id
+        if @book.save
+          redirect_to root_path
+        else
+          render action: :new
+        end
       else
-        render action: :new
+        redirect_to action: :index
       end
     end
   end
@@ -37,7 +43,7 @@ class BooksController < ApplicationController
       book.destroy
       redirect_to root_path
     else
-      render root_path
+      redirect_to action: :index
     end
   end
 

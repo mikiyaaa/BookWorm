@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_30_071002) do
+ActiveRecord::Schema.define(version: 2021_04_02_060450) do
 
   create_table "books", primary_key: "isbn", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
@@ -22,6 +22,18 @@ ActiveRecord::Schema.define(version: 2021_03_30_071002) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_books_on_user_id"
+  end
+
+  create_table "reviews", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "summary"
+    t.text "impressions"
+    t.text "plan"
+    t.bigint "book_id"
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["book_id"], name: "index_reviews_on_book_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -38,4 +50,6 @@ ActiveRecord::Schema.define(version: 2021_03_30_071002) do
   end
 
   add_foreign_key "books", "users"
+  add_foreign_key "reviews", "books", primary_key: "isbn"
+  add_foreign_key "reviews", "users"
 end
