@@ -6,7 +6,7 @@ FactoryBot.define do
     caption {'説明文'}
     image_url {'public/images/white_00073.jpg'}
     url {'http://example.com'}
-    association :user
     
+    association :user
   end
 end
