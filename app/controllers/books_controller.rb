@@ -34,6 +34,8 @@ class BooksController < ApplicationController
       else
         redirect_to action: :index
       end
+    else
+      render action: :new
     end
   end
 
