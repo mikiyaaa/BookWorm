@@ -39,6 +39,14 @@ a {
 }
 
 /* ボディ */
+.container {
+  overflow: scroll;
+}
+
+.row {
+  margin: 10px 0;
+}
+
 .search-btn {
   width: 150px;
   border-radius: 10px;
@@ -63,8 +71,9 @@ a {
 }
 
 p {
-  margin: 10px auto;
+  margin-top: 5px;
   font-size: 15px;
+  line-height: 20px;
 }
 
 .release-btn {
@@ -73,6 +82,32 @@ p {
   border: solid 1px #fff;
   line-height: normal;
   font-size: small;
+}
+
+/* 検索ページ */
+.row .form-inline {
+  margin: 35px auto;
+}
+
+.col-lg-4 {
+  margin-bottom: 20px;
+  height: 100%;
+}
+
+.btn {
+  width: 100px;
+  border-radius: 10px;
+  border: solid 1px;
+  color: #FFF;
+  background: #669966;
+  padding: 5px;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.save-btn {
+  font-size: small;
+
 }
 
 /* フッター */
