@@ -1,17 +1,55 @@
-<h1>個別書籍ページ</h1>
-<% if @review.present? %>
-  <%= link_to '編集する', "/books/#{@book.id}/reviews/{@review}/edit" %>
-<% else %>
-  <%= link_to 'レビューを登録', new_book_review_path %></br>
-<% end %>
-</br>
 
-<%= image_tag(@book.image_url) %></br>
-<%= @book.title %></br>
-<%= @book.author %></br>
+<div class='container'>
+  <div class='row-menu'>
+    <div class='menu-bar'>
+      <% if @review.present? %>
+        <button class='edit-btn'><%= link_to '編集する', "/books/#{@book.id}/reviews/{@review}/edit" %></button>
+      <% else %>
+      <button class='review-btn'><%= link_to 'レビューを登録', new_book_review_path %></button>
+      <% end %>
+    </div>
+  </div>
 
-<% if @review.present? %>
-  <%= @review.summary %></br>
-  <%= @review.impressions %></br>
-  <%= @review.plan %></br>
-<% end %>
+  <div class='row'>
+    <div class='col-xs-12 col-lg-6'>
+      <%= image_tag @book.image_url, class: 'individual-book-image' %></br>
+      <p>題名:　<%= @book.title %></p>
+      <p>著者:　<%= @book.author %></p>
+    </div>
+
+    <% if @review.present? %>
+      <div class='col-xs-12 col-lg-6'>
+        <div class='content'>
+          <h2>要約</h2>
+          <hr>
+          <p><%= @review.summary %></p>
+        </div>
+        <div class='content'>
+          <h2>感想</h2>
+          <hr>
+          <p><%= @review.impressions %></p>
+        </div>
+        <div class='content'>
+          <h2>アクションプラン</h2>
+          <hr>
+          <p><%= @review.plan %></p>
+        </div>
+      </div>
+    <% else %>
+      <div class='col-xs-12 col-lg-6'>
+        <div class='content'>
+          <h2>要約</h2>
+          <hr>
+        </div>
+        <div class='content'>
+          <h2>感想</h2>
+          <hr>
+        </div>
+        <div class='content'>
+          <h2>アクションプラン</h2>
+          <hr>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

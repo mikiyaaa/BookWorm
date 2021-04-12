@@ -1,13 +1,31 @@
-<h1>レビュー登録ページ</h1>
-<%= link_to '個別書籍ページへ', book_reviews_path %></br>
+<div class='container'>
+  <div class='row-menu'>
+    <div class='menu-bar'>
+    <button class='review-btn'><%= link_to '書籍画面へ', book_reviews_path %></button>
+    </div>
+  </div>
 
-<%= form_with model: [@book, @review], class: 'form', local: true do |f| %>
-  <%= f.label '要約' %></br>
-  <%= f.text_field :summary %></br>
-  <%= f.label '感想'  %></br>
-  <%= f.text_field :impressions %></br>
-  <%= f.label 'アクションプラン' %></br>
-  <%= f.text_field :plan %></br>
-  </br>
-  <%= f.submit value: '登録する' %>
-<% end %>
+  <div class='row form-container'>
+      <%= form_with model: [@book, @review], class: 'form', local: true do |f| %>
+        <div class='col-12'>
+          <%= f.label '要約', class: 'label' %></br>
+          <%= f.text_area :summary, class: 'form' %></br>
+        </div>
+
+        <div class='col-12'>
+          <%= f.label '感想', class: 'label' %></br>
+          <%= f.text_area :impressions, class: 'form' %></br>
+        </div>
+        
+        <div class='col-12'>
+          <%= f.label 'アクションプラン',  class: 'label' %></br>
+          <%= f.text_area :plan, class: 'form' %></br>
+        </div>
+
+        <div class='submit-form'>
+          <%= f.submit value: '登録する', class: 'form-btn' %>
+        </div>
+      <% end %>
+
+  </div>
+</div>

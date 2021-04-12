@@ -1,0 +1,245 @@
+/* ヘッダー */
+header {
+  width: 100%;
+  height: 60px;
+  padding: 0 30px;
+  background-color: #669966;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.right-bar {
+  display: flex;
+  align-items: center;
+}
+
+.right-bar img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.right-bar .title {
+  font-size: 18px;
+}
+
+.nav .menu-group {
+  display: flex;
+}
+
+.menu-item {
+  margin: 0 20px;
+  color: #fff;
+
+}
+
+/* ボディ */
+.container {
+  height: 650px;
+  overflow: scroll;
+}
+
+.row {
+  margin: 10px 0;
+}
+
+.search-btn {
+  width: 150px;
+  border-radius: 10px;
+  border: solid 1px;
+  margin: 35px auto;
+  color: #FFF;
+  background: #669966;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.contents .content {
+  font-size: 30px;
+  font-style: oblique;
+  font-family: Times New Roman, "ＭＳ Ｐゴシック";
+}
+
+
+.book-image {
+  width: 50%;
+  height: 70%;
+}
+
+p {
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.release-btn {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: solid 1px #fff;
+  line-height: normal;
+  font-size: small;
+}
+
+/* 検索ページ */
+.row .form-inline {
+  margin: 35px auto;
+}
+
+.col-lg-4 {
+  margin-bottom: 20px;
+  height: 100%;
+}
+
+.btn {
+  width: 100px;
+  border-radius: 10px;
+  border: solid 1px;
+  color: #FFF;
+  background: #669966;
+  padding: 5px;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.save-btn {
+  font-size: small;
+}
+
+/* 個別書籍ページ */
+.row-menu {
+  text-align: right;
+}
+
+.menu-bar {
+  margin: 30px 30px 30px 0;
+}
+
+.edit-btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: solid .5px;
+  background: #669966;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.review-btn {
+  width: 130px;
+  height: 30px;
+  border-radius: 10px;
+  border: solid .5px;
+  background: #669966;
+  padding: 5px;
+  font-size: 16px;
+}
+
+
+.individual-book-image {
+  width: 60%;
+}
+
+.col-xs-12 {
+  margin-bottom: 30px;
+}
+
+.col-lg-6 .content {
+  background-color: antiquewhite;
+  height: 150px;
+  padding: 15px;
+  margin-bottom: 50px;
+}
+
+/* 新規レビュー画面 */
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  font-size: 20px;
+}
+
+.form {
+  width: 90%;
+  height: 100px;
+  margin: 10px 0 30px 20px;
+}
+
+.submit-form {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* フッター */
+footer {
+  background-color: #669966;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* ログイン画面 */
+.form-wrap {
+  position: relative;
+  height: 650px;
+} 
+
+.form-group {
+  border: solid 1px ;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom :0;
+  margin:  auto;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
+
+.form-header-name {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.field {
+  margin: 15px 0;
+}
+
+.field .label {
+  margin-bottom: 15px;
+}
+
+.user-btn {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+/* 新規登録画面 */
+.form-group-signup {
+    border: solid 1px ;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom :0;
+    margin:  auto;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+}
