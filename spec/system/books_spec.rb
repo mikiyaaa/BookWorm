@@ -16,11 +16,11 @@ RSpec.describe "書籍登録機能", type: :system do
       # 検索フォームに情報を入力する
       fill_in 'title', with: '20代を無難に生きるな'
       # 検索をクリックすると該当の書籍が一覧表示されることを確認する
-        click_on('商品を検索')
+        click_on('書籍を検索')
         expect(page).to have_content('20代を無難に生きるな')
       # 登録するとBookモデルのカウントが1上がることを確認する
       expect{
-        click_on('save')
+        click_on('登録する')
     }.to change { Book.count }.by(1)
       # トップページへ遷移することを確認する
       expect(current_path).to eq(root_path)
@@ -40,11 +40,11 @@ RSpec.describe "書籍登録機能", type: :system do
         # 検索フォームに情報を入力する
         fill_in 'title', with: '20代を無難に生きるな'
         # 検索をクリックすると該当の書籍が一覧表示されることを確認する
-          click_on('商品を検索')
+          click_on('書籍を検索')
           expect(page).to have_content('20代を無難に生きるな')
         # 登録するとBookモデルのカウントが1上がることを確認する
         expect{
-          click_on('save')
+          click_on('登録する')
       }.to change { Book.count }.by(1)
         # トップページへ遷移することを確認する
         expect(current_path).to eq(root_path)
@@ -55,11 +55,11 @@ RSpec.describe "書籍登録機能", type: :system do
         # 検索フォームに情報を入力する
         fill_in 'title', with: '20代を無難に生きるな'
         # 検索をクリックすると該当の書籍が一覧表示されることを確認する
-        click_on('商品を検索')
+        click_on('書籍を検索')
         expect(page).to have_content('20代を無難に生きるな')
         # 登録してもBookモデルのカウントは変わらないことを確認する
         expect{
-          click_on('save')
+          click_on('登録する')
       }.to change { Book.count }.by(0)
         # 書籍登録ページへ戻っていることを確認する
         expect(current_path).to eq('/books')
