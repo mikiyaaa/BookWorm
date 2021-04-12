@@ -191,3 +191,40 @@ footer {
   color: #fff;
   font-size: 18px;
 }
+
+/* ログイン画面 */
+.form-wrap {
+  position: relative;
+  height: 650px;
+} 
+
+.form-group {
+  border: solid 1px ;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom :0;
+  margin:  auto;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
+
+.form-header-name {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+.field {
+  margin: 15px 0;
+}
+
+.field .label {
+  margin-bottom: 15px;
+}
+
+.login-btn {
+  padding: 10px;
+}
