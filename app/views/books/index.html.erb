@@ -16,7 +16,7 @@
         <%= link_to (image_tag book.image_url, class: 'book-image'), book_reviews_path(book) %></br>
         <p class='book-title'><%= book.title %></p>
         <p class='book-author'><%= book.author %></p>
-        <button class='release-btn'><%= link_to '登録解除', book_path(book), method: :delete %></button>
+        <button class='release-btn'><%= button_to '登録解除', book_path(book.id), method: :delete %></button>
       </div>
     <% end %>
   </div>
