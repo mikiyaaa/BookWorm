@@ -214,7 +214,7 @@ footer {
 .form-header-name {
   font-size: 26px;
   font-weight: bold;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 .field {
@@ -225,6 +225,21 @@ footer {
   margin-bottom: 15px;
 }
 
-.login-btn {
-  padding: 10px;
+.user-btn {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+/* 新規登録画面 */
+.form-group-signup {
+    border: solid 1px ;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom :0;
+    margin:  auto;
+    width: 400px;
+    height: 500px;
+    text-align: center;
 }
