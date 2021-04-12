@@ -1,14 +1,15 @@
 <div class='container'>
-<div class='row'>
+
+  <div class='row'>
     <%= form_tag(new_book_path, method: :get, class: 'form-inline') do %>
-      <%= text_field_tag :title, @title, class: 'form-control', placeholder:'書籍タイトル', size: 40 %>
-      <%= submit_tag '書籍を検索', class: 'btn'%>
+      <div class='col-xs-12'>
+        <%= text_field_tag :title, @title, class: 'form-control', placeholder:'書籍タイトル', size: 40 %>
+      </div>
+      <div class='col-xs-12'>
+        <%= submit_tag '書籍を検索', class: 'btn'%>
+      </div>
     <% end %>
   </div>
-</div>
-
-<div class='container'>
-  
 
   <div class='row'>
     <% if @books %>
