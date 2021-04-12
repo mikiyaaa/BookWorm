@@ -11,7 +11,7 @@ header {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
 .right-bar {
@@ -151,7 +151,7 @@ p {
 .col-lg-6 .content {
   background-color: antiquewhite;
   height: 150px;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 50px;
 }
 
