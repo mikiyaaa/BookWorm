@@ -23,7 +23,7 @@ RSpec.describe "書籍登録機能", type: :system do
         click_on('登録する')
     }.to change { Book.count }.by(1)
       # トップページへ遷移することを確認する
-      expect(current_path).to eq(root_path)
+      expect(current_path).to eq(books_path)
       # トップページに登録した書籍が存在することを確認する
       expect(page).to have_content('20代を無難に生きるな')
     end
@@ -47,7 +47,7 @@ RSpec.describe "書籍登録機能", type: :system do
           click_on('登録する')
       }.to change { Book.count }.by(1)
         # トップページへ遷移することを確認する
-        expect(current_path).to eq(root_path)
+        expect(current_path).to eq(books_path)
         # トップページに登録した書籍が存在することを確認する
         expect(page).to have_content('20代を無難に生きるな')
         # 書籍登録ページへ移動する
