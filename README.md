@@ -16,7 +16,7 @@ BookWormで読んだ本を記録・アウトプットすることで、読書の
 </h4>
 <img width="1500" alt="スクリーンショット 2021-04-14 16 14 48" src="https://user-images.githubusercontent.com/77310785/114669452-de69b400-9d3c-11eb-835e-1ac48bd98119.png">
 
-## URL
+# URL
 https://hon-no-musi.herokuapp.com/
 
 Basic認証
@@ -27,7 +27,7 @@ Basic認証
 - Email: guest@sample.com  
 - Pass : 123456abc
 
-## 使用言語・使用技術など
+# 使用言語・使用技術など
 - Ruby 2.6.5
 - Ruby on Rails 6.0.0
 - MySQL
@@ -36,18 +36,18 @@ Basic認証
 - Github
 - 楽天ブックス書籍検索API
 
-## 機能一覧
+# 機能一覧
 - ユーザー登録、ログイン機能(devise)
 - 書籍登録機能
   - 書籍検索(楽天ブックス書籍API)
 - レビュー機能
 
-## テスト
+# テスト
 - RSpec
   - 単体テスト(model)
   - 結合テスト(system)
 
-## データベース設計
+# データベース設計
 ## users テーブル
 | Column             | Type        | Options                   |
 | ------------------ | ----------- | ------------------------- |
