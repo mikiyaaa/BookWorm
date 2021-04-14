@@ -5,19 +5,19 @@
     </div>
   </div>
 
-  <div class='row form-container'>
-      <%= form_with model: [@book, @review], class: 'form', local: true do |f| %>
-        <div class='col-12'>
+  <div class='row'>
+      <%= form_with model: [@book, @review], class: 'form-wrapper', local: true do |f| %>
+        <div class='col-xs-12'>
           <%= f.label '要約', class: 'label' %></br>
           <%= f.text_area :summary, class: 'form' %></br>
         </div>
 
-        <div class='col-12'>
+        <div class='col-xs-12'>
           <%= f.label '感想', class: 'label' %></br>
           <%= f.text_area :impressions, class: 'form' %></br>
         </div>
         
-        <div class='col-12'>
+        <div class='col-xs-12'>
           <%= f.label 'アクションプラン',  class: 'label' %></br>
           <%= f.text_area :plan, class: 'form' %></br>
         </div>

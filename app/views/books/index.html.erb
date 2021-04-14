@@ -12,7 +12,7 @@
 <hr>
   <div class='row'>
     <% @books.each do |book| %>
-      <div class='col-xs-12 col-lg-4'>
+      <div class='col-xs-12 col-lg-3'>
         <%= link_to (image_tag book.image_url, class: 'book-image'), book_reviews_path(book) %></br>
         <p class='book-title'><%= book.title %></p>
         <p class='book-author'><%= book.author %></p>

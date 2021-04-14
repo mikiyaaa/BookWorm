@@ -45,7 +45,7 @@ class ReviewsController < ApplicationController
 
   def move_to_index
     if current_user.id != @book.user_id
-      redirect_to root_path
+      redirect_to books_path
     end
   end
 end
