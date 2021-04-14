@@ -38,14 +38,27 @@ a {
 
 }
 
+/* トップページ */
+.wrapper {
+  height: calc(100% - 120px);
+  background-image: url('depositphotos_1982682-stock-photo-reading-in-front-of-cheminey.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* ボディ */
+body {
+  height: 940px;
+}
+
 .container {
-  height: 650px;
+  height: calc(100% - 120px);
   overflow: scroll;
 }
 
 .row {
   margin: 10px 0;
+  /* text-align: center; */
 }
 
 .search-btn {
@@ -90,7 +103,7 @@ p {
   margin: 35px auto;
 }
 
-.col-lg-4 {
+.col-lg-3 {
   margin-bottom: 20px;
   height: 100%;
 }
@@ -156,27 +169,24 @@ p {
 }
 
 /* 新規レビュー画面 */
-
-
-.form-container {
-  display: flex;
-  justify-content: center;
+.form-wrapper {
+  text-align: center;
+  width: 100%;
 }
 
 .label {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+
 }
 
 .form {
-  width: 90%;
-  height: 100px;
-  margin: 10px 0 30px 20px;
+  width: 80%;
+  height: 120px;
+  
 }
 
-.submit-form {
-  text-align: center;
-  margin-bottom: 50px;
-}
 
 /* フッター */
 footer {
@@ -195,7 +205,7 @@ footer {
 /* ログイン画面 */
 .form-wrap {
   position: relative;
-  height: 650px;
+  height: calc(100% - 120px);
 } 
 
 .form-group {
@@ -206,7 +216,7 @@ footer {
   top: 0;
   bottom :0;
   margin:  auto;
-  width: 400px;
+  width: 350px;
   height: 400px;
   text-align: center;
 }
@@ -239,7 +249,7 @@ footer {
     top: 0;
     bottom :0;
     margin:  auto;
-    width: 400px;
+    width: 350px;
     height: 500px;
     text-align: center;
 }

@@ -27,7 +27,7 @@ class BooksController < ApplicationController
       @book = Book.new(read(result.first))
       if current_user.id == @book.user_id
         if @book.save
-          redirect_to root_path
+          redirect_to books_path
         else
           render action: :new
         end
@@ -43,7 +43,7 @@ class BooksController < ApplicationController
     book = Book.find(params[:id])
     if current_user.id == book.user_id
       book.destroy
-      redirect_to root_path
+      redirect_to books_path
     else
       redirect_to action: :index
     end
