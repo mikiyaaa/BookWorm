@@ -1,17 +1,20 @@
 ## BookWorm 本のムシ
-読書を記録できるアプリケーションです。
+1. 読書を記録できるアプリケーションです。
+<img width="1500" alt="スクリーンショット 2021-04-14 15 45 01" src="https://user-images.githubusercontent.com/77310785/114666057-c1cb7d00-9d38-11eb-984e-0ca5d1dc7f3c.png">
 
-<img width="1680" alt="スクリーンショット 2021-04-14 15 45 01" src="https://user-images.githubusercontent.com/77310785/114666057-c1cb7d00-9d38-11eb-984e-0ca5d1dc7f3c.png">
-
+2. 要約・感想・その後のアクションプランを記録することで、より記憶に定着し理解を深めることができます。
+<img width="1500" alt="スクリーンショット 2021-04-14 16 14 48" src="https://user-images.githubusercontent.com/77310785/114669452-de69b400-9d3c-11eb-835e-1ac48bd98119.png">
 
 ## URL
 https://hon-no-musi.herokuapp.com/
 
-
+Basic認証
+- ユーザー : honnomusi
+- パスワード: 0220
 
 ゲスト用アカウント
 - Email: guest@sample.com  
-- Pass: 123456abc
+- Pass : 123456abc
 
 ## 使用言語・使用技術など
 - Ruby 2.6.5
