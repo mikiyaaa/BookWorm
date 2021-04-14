@@ -5,12 +5,15 @@ BookWormで読んだ本を記録・アウトプットすることで、読書の
 
 <h4>1. 読書を記録できるアプリケーションです。</h4>
 <img width="1500" alt="スクリーンショット 2021-04-14 15 45 01" src="https://user-images.githubusercontent.com/77310785/114666057-c1cb7d00-9d38-11eb-984e-0ca5d1dc7f3c.png">
+<br>
 
 <h4>2. タイトルで書籍を検索し、登録することができます。</4>
 <br>
 <br>
 <img width="1500" alt="スクリーンショット 2021-04-14 16 36 20" src="https://user-images.githubusercontent.com/77310785/114672188-d0696280-9d3f-11eb-8cb7-ccf3ccdbef46.png">
 <br>
+<br>
+
 <h4>
   3. 要約・感想・その後のアクションプランを言語化し記録することで、より記憶に定着させることができます。<br>
 </h4>
