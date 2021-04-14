@@ -1,34 +1,41 @@
-## アプリケーション名
-  BookWorm 読書のムシ
-
-## アプリケーション概要
-  読書記録アプリ
+## BookWorm 本のムシ
+読書を記録できるアプリケーションです。
+画像いれる
 
 ## URL
+https://hon-no-musi.herokuapp.com/
 
 
-## テスト用アカウント
-email: 
-password: 
 
-## 利用方法
-  新規登録・ログインしたユーザーのみBookWormを利用できる。
-  読んだ書籍を検索ページで検索し、登録する。
-  登録された書籍の要約や感想、今後のアクションプランを記録する。
-  
+ゲスト用アカウント
+- Email: guest@sample.com  
+- Pass: 123456abc
+
+## 使用言語・使用技術など
+- Ruby 2.6.5
+- Ruby on Rails 6.0.0
+- MySQL
+- Heroku
+- RSpec
+- Github
+- 楽天ブックス書籍検索API
+
+## 機能一覧
+- ユーザー登録、ログイン機能(devise)
+- 書籍登録機能
+  - 書籍検索(楽天ブックス書籍API)
+- レビュー機能
+
+## テスト
+- RSpec
+  - 単体テスト(model)
+  - 結合テスト(system)
+
 ## 目指した課題解決
   読書を通して学んだことをアウトプットし、更に実践すること。
   本を読んでも、情報量が多く頭に入らない・すぐに忘れてしまう・読んだ後具体的に何をしていいか分からない等の悩みがある。
   BookWormで読んだ本を記録・アウトプットすることで、内容の理解を深め、実践することができる。
 
-## 用件定義
-- ユーザー管理機能
-- 書籍検索/登録機能
-- レビュー機能
-
-
-## 実装予定の機能
-  コメント機能の実装
 
 ## データベース設計
 ## users テーブル
@@ -66,6 +73,7 @@ password:
 | impressions | text        |                                |
 | plan        | text        |                                |
 | book        | references  | null: false, foreign_key: true |
+| user        | references  | null: false, foreign_key: true |
  
 ### Association
 - belongs_to :user
