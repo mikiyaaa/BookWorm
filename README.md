@@ -17,7 +17,8 @@ BookWormで読んだ本を記録・アウトプットすることで、読書の
 <h4>
   3. 要約・感想・その後のアクションプランを言語化し記録することで、より記憶に定着させることができます。<br>
 </h4>
-<img width="1500" alt="スクリーンショット 2021-04-14 16 14 48" src="https://user-images.githubusercontent.com/77310785/114669452-de69b400-9d3c-11eb-835e-1ac48bd98119.png">
+<img width="1500" alt="スクリーンショット 2021-04-27 18 23 47" src="https://user-images.githubusercontent.com/77310785/116220485-ae340380-a787-11eb-96ea-9f9181b5dc01.png">
+
 
 # URL
 https://hon-no-musi.herokuapp.com/
